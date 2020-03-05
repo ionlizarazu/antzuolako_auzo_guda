@@ -20,10 +20,30 @@ Herriko mapa koloreztatua dago. Hasierako egoera erakusten du eta ez da aldatzen
 Gudan zehar momentuko egoerak kudeatzeko erabiltzen den HTML fitxategia.
 
 ## Nola erabili:
-Python bidez exekutatzen da guda.
+### **1.** Ingurune birtuala sortu
+Deskargatu kode hau eta sortu [virtualenv](https://virtualenv.pypa.io/en/latest/) bat
+karpetan bertan, horrela zure sistemako python ingurunea ez duzu kakaztuko.
+```bash
+    $ python3 -m venv myvenv
+```
+### **2.** Ingurune birtuala aktibatu
+
+```bash
+    $ source myvenv/bin/activate 
+```
+
+### **3.** Beautifulsoup dependentzia instalatu
+
+```bash
+    $ pip install beautifulsoup4
+```
+
+### **4.** Python bidez exekutatu
+
 ```bash
     $ python3 antzuolaGuda.py
 ```
+
 Terminaletik exekutatzean gudaren prozesua pantailan erakusten joango zaigu.
 Bestalde, hainbat fitxategi sortuko dizkigu:
 - mapa barruan konkista edo independentzia bakoitzeko HTML fitxategi bat, "egun" bezala identifikatuta eta azkenik BUKAERA.html fitxategi bat guda amaiera nola geratu den ikusteko.
